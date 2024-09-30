@@ -1,7 +1,6 @@
 {% set version = '1.0.1' %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-ggfx
@@ -14,8 +13,7 @@ source:
   sha256: 47cc28062a5f95b518bff0fb42a572005dbbedd97de6539b69fbd3483f2ddad3
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
