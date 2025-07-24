@@ -1,4 +1,4 @@
-{% set version = '1.0.1' %}
+{% set version = "1.0.2" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggfx_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggfx/ggfx_{{ version }}.tar.gz
-  sha256: 47cc28062a5f95b518bff0fb42a572005dbbedd97de6539b69fbd3483f2ddad3
+  sha256: 4293473151fc461d88434d542827cde00ab95df39b7c048282afee90cf644861
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,10 +48,7 @@ test:
 about:
   home: https://ggfx.data-imaginist.com, https://github.com/thomasp85/ggfx
   license: MIT
-  summary: Provides a range of filters that can be applied to layers from the 'ggplot2' package
-    and its extensions, along with other graphic elements such as guides and theme elements.
-    The filters are applied at render time and thus uses the exact pixel dimensions
-    needed.
+  summary: Provides a range of filters that can be applied to layers from the 'ggplot2' package and its extensions, along with other graphic elements such as guides and theme elements. The filters are applied at render time and thus uses the exact pixel dimensions needed.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
