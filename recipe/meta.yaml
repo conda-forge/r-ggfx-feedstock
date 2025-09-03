@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggfx_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggfx/ggfx_{{ version }}.tar.gz
-  sha256: 4293473151fc461d88434d542827cde00ab95df39b7c048282afee90cf644861
+  sha256: 154e96e4818ed31731db7b7bf07ff6a40e4b8368a4c3c64887ccf2734361f1f8
 
 build:
   number: 0
